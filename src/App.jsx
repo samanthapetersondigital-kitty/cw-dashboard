@@ -48,14 +48,81 @@ const CLIENT = {
 };
 
 // ─── EMAIL DATA ───────────────────────────────────────────────────────────────
-const EMAIL_TOP_LINES = [];
+const EMAIL_TOP_LINES = [
+  {
+    "subject": "CW_EM_EN_WL_251106_1_1",
+    "sendDate": "11/6/25",
+    "period": "weekly",
+    "recipients": 0,
+    "opens": 0,
+    "openRate": 46.0,
+    "clicks": 0,
+    "clickRate": 4.4,
+    "unsubs": 0
+  },
+  {
+    "subject": "CW_EM_EN_WL_251111_1_1",
+    "sendDate": "11/11/25",
+    "period": "weekly",
+    "recipients": 0,
+    "opens": 0,
+    "openRate": 41.0,
+    "clicks": 0,
+    "clickRate": 3.3,
+    "unsubs": 0
+  },
+  {
+    "subject": "CW_EM_EN_WL_251126_1_1",
+    "sendDate": "11/26/25",
+    "period": "weekly",
+    "recipients": 0,
+    "opens": 0,
+    "openRate": 41.0,
+    "clicks": 0,
+    "clickRate": 1.6,
+    "unsubs": 0
+  },
+  {
+    "subject": "CW_EM_SV_NTL_251219_1_1",
+    "sendDate": "12/19/25",
+    "period": "weekly",
+    "recipients": 124,
+    "opens": 28,
+    "openRate": 23.0,
+    "clicks": 9,
+    "clickRate": 7.3,
+    "unsubs": 1
+  },
+  {
+    "subject": "CW_EM_EN_90DO_251223_1_1",
+    "sendDate": "12/23/25",
+    "period": "weekly",
+    "recipients": 0,
+    "opens": 0,
+    "openRate": 48.0,
+    "clicks": 0,
+    "clickRate": 130.0,
+    "unsubs": 0
+  },
+  {
+    "subject": "CW_EM_FR_90DO_251227_1_1",
+    "sendDate": "12/27/25",
+    "period": "weekly",
+    "recipients": 0,
+    "opens": 0,
+    "openRate": 52.0,
+    "clicks": 0,
+    "clickRate": 2.4,
+    "unsubs": 0
+  }
+];
 
 const EMAIL_MONTHLY_SUMMARY = {
-  sends: 0,
-  totalRecipients: 0,
-  avgOpenRate: 0.0,
-  avgClickRate: 0.0,
-  totalUnsubs: 0,
+  sends: 10,
+  totalRecipients: 124,
+  avgOpenRate: 42.2,
+  avgClickRate: 16.1,
+  totalUnsubs: 1,
 };
 const EMAIL_QUARTERLY_SUMMARY = EMAIL_MONTHLY_SUMMARY;
 
@@ -172,15 +239,15 @@ const GOOGLE_ADS = [];
 
 // ─── GROWTH CALC ──────────────────────────────────────────────────────────────
 const GROWTH_CALC = [
-  { metric: "Avg Open Rate", value: "0.0%", benchmark: ">14% = Strong", status: "below" },
-  { metric: "Avg Click Rate", value: "0.0%", benchmark: ">3.0%", status: "below" },
+  { metric: "Avg Open Rate", value: "42.2%", benchmark: ">14% = Strong", status: "above" },
+  { metric: "Avg Click Rate", value: "16.1%", benchmark: ">3.0%", status: "above" },
   { metric: "Digital % of ActBlue", value: "98.2%", benchmark: "10–15%", status: "above" },
 ];
 
 const DEFAULT_HIGHLIGHTS = [
   "Dashboard initialized with data through April 14, 2026",
   "Digital raise: $1,340 (98.2% of total ActBlue)",
-  "Average email open rate: 0.0%",
+  "Average email open rate: 42.2%",
   "Total ActBlue raised: $1,365",
 ];
 
